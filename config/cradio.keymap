@@ -53,7 +53,7 @@
             #binding-cells = <1>;
             bindings = <&kp>, <&macro_dw>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-        }
+        };
         dw_mod: delete_word_mod {
             compatible = "zmk,behavior-hold-tap";
             label = "DELETE_WORD_TO_LAYER";
