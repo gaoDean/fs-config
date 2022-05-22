@@ -18,9 +18,6 @@
   continue-list = <UNDERSCORE MINUS BACKSPACE>;
 };
 
-&kscan0 {
-  debounce-period = <14>;
-};
 
 / {
 
@@ -44,7 +41,7 @@
         kr_to: key_repeat_to_layer {
             compatible = "zmk,behavior-hold-tap";
             label = "KEY_REPEAT_TO_LAYER";
-            #binding-cells = <1>;
+            #binding-cells = <2>;
             bindings = <&key_repeat>, <&mo>;
         };
         if_shft: if_shift {
