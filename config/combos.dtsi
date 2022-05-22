@@ -33,7 +33,7 @@ COMBO(dollar, &kp DOLLAR, 3 13)
 COMBO(percentage, &kp PERCENT, 4 14)
 
 COMBO(caret, &kp CARET, 5 15)
-COMBO(ampersand, &kp ANPERSAND, 6 16)
+COMBO(ampersand, &kp AMPERSAND, 6 16)
 COMBO(asterisk, &kp ASTERISK, 7 17)
 COMBO(backslash, &kp NON_US_BACKSLASH, 8 18)
 
@@ -46,7 +46,7 @@ COMBO(plus, &kp PLUS, 13 14)
 COMBO(pipe, &kp PIPE2, 15 16)
 COMBO(doubleQuotes, &kp DOUBLE_QUOTES, 16 17)
 COMBO(quote, &kp SINGLE_QUOTE, 17 18)
-COMBO(undersore, &kp UNDERSCORE, 18 19)
+COMBO(underscore, &kp UNDERSCORE, 18 19)
 
 
 COMBO(doubleGrave, &macro_doubleGrave, 11 21)
