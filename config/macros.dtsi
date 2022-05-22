@@ -1,0 +1,24 @@
+#define str(s) #s
+#define MACRO(NAME, BINDINGS) \
+    macro_##NAME: macro_##NAME { \
+        compatible = "zmk, behavior-macro"; \
+        label = str(macro_##NAME0; \
+        #binding-cells = <0>; \
+        wait-ms = <30>; \
+        tap-ms = <40>; \
+        bindings = <BINDINGS>; \
+    };
+
+/* brackets */
+MACRO(bracket, &kp LEFT_BRACKET &kp RIGHT_BRACKET)
+MACRO(parenthesis, &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS)
+MACRO(arrow, &kp LESS_THAN &kp GREATER_THAN)
+MACRO(brace, &kp LEFT_BRACE &kp RIGHT_BRACE)
+
+MACRO(doubleGrave, &kp GRAVE &kp GRAVE)
+MACRO(quadQuotes, &kp DOUBLE_QUOTES &kp DOUBLE_QUOTES)
+MACRO(doubleSingleQuotes, &kp SINGLE_QUOTE &kp SINGLE_QUOTE)
+
+MACRO(dw, &kp LG(BACKSPACE) &kp LC(w))
+
+MACRO(power, &macro_tap_time 1000 &kp C_POWER)
