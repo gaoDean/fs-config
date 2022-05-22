@@ -19,8 +19,8 @@ COMBO(leftBrace, &kp LEFT_BRACE, 21 22)
 COMBO(rightBrace, &kp RIGHT_BRACE, 22 23)
 COMBO(bothBrace, &macro_brace, 21 23)
 
-COMBO(leftArrow, &kp LEFT_ARROW, 26 27)
-COMBO(rightArrow, &kp RIGHT_ARROW, 27 28)
+COMBO(leftArrow, &kp LESS_THAN, 26 27)
+COMBO(rightArrow, &kp GREATER_THAN, 27 28)
 COMBO(bothArrow, &macro_arrow, 26 28)
 
 /* symbols */
