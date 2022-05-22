@@ -47,15 +47,15 @@
         if_shft: if_shift {
             compatible = "zmk,behavior-mod-morph";
             label = "IF_SHIFT";
-            #binding-cells = <2>;
-            bindings = <&kp>, <&macro_dw>;
+            #binding-cells = <0>;
+            bindings = <&kp BKSP>, <&macro_dw>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         dw_mod: delete_word_mod {
             compatible = "zmk,behavior-hold-tap";
             label = "DELETE_WORD_TO_LAYER";
-            #binding-cells = <2>;
-            bindings = <&if_shft BKSP>, <&kp>;
+            #binding-cells = <0>;
+            bindings = <&if_shft>, <&kp LGUI>;
         };
 
     };
@@ -72,7 +72,7 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
         &kp Q         &kp V         &kp W         &kp D         &kp Z             &kp B         &kp H         &kp COMMA    &kp SLASH      &kp X
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                                &kr_to NAV      &skq LSHIFT       &dw_mod LGUI  &kp SPACE
+                                                &kr_to NAV      &skq LSHIFT       &dw_mod  &kp SPACE
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
                         >;
         };
