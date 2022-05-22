@@ -19,6 +19,6 @@ MACRO(doubleGrave, &kp GRAVE &kp GRAVE)
 MACRO(quadQuotes, &kp DOUBLE_QUOTES &kp DOUBLE_QUOTES)
 MACRO(doubleSingleQuotes, &kp SINGLE_QUOTE &kp SINGLE_QUOTE)
 
-MACRO(dw, &kp LG(BACKSPACE) &kp LC(w))
+MACRO(dw, &kp LG(BACKSPACE) &kp LC(W))
 
 // MACRO(power, &macro_tap_time 1000 &kp C_POWER)
