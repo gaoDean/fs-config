@@ -64,7 +64,7 @@
         label = "KEY_REPEAT_TO_LAYER";
         #binding-cells = <2>;
         tapping_term_ms = <200>;
-        bindings = <MO(NAV)>, <&key_repeat>;
+        bindings = <&mo>, <&key_repeat>;
     };
 
     if_shift: if_shift_bksp_dw {
