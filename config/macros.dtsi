@@ -1,76 +1,19 @@
-macro_parentheses: macro_parentheses {
-    compatible = "zmk,behavior-macro";
-    label = "MACRO_PARENTHESES";
-    #binding-cells = <0>;
-    wait-ms = <30>;
-    tap-ms = <40>;
-    bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS>;
-};
-macro_brackets: macro_brackets {
-    compatible = "zmk,behavior-macro";
-    label = "MACRO_BRACKETS";
-    #binding-cells = <0>;
-    wait-ms = <30>;
-    tap-ms = <40>;
-    bindings = <&kp LEFT_BRACKET &kp RIGHT_BRACKET>;
-};
-macro_braces: macro_braces {
-    compatible = "zmk,behavior-macro";
-    label = "MACRO_BRACES";
-    #binding-cells = <0>;
-    wait-ms = <30>;
-    tap-ms = <40>;
-    bindings = <&kp LEFT_BRACE &kp RIGHT_BRACE>;
-};
-macro_ltgt: macro_ltgt {
-    compatible = "zmk,behavior-macro";
-    label = "MACRO_LTGT";
-    #binding-cells = <0>;
-    wait-ms = <30>;
-    tap-ms = <40>;
-    bindings = <&kp LESS_THAN &kp GREATER_THAN>;
-};
+/* Macro macro: */
+#define str(s) #s
+#define MACRO(NAME, BINDINGS) \
+  macro_##NAME: macro_##NAME { \
+      compatible = "zmk,behavior-macro"; \
+      label = str(macro_##NAME); \
+      #binding-cells = <0>; \
+      wait-ms = <30>; \
+      tap-ms = <40>; \
+      bindings = <BINDINGS>; \
+  };
 
-macro_doubleGrave: macro_doubleGrave {
-    compatible = "zmk,behavior-macro";
-    label = "MACRO_DOUBLEGRAVE";
-    #binding-cells = <0>;
-    wait-ms = <30>;
-    tap-ms = <40>;
-    bindings = <&kp GRAVE &kp GRAVE>;
-};
-macro_quadQuotes: macro_quadQuotes {
-    compatible = "zmk,behavior-macro";
-    label = "MACRO_QUADQUOTES";
-    #binding-cells = <0>;
-    wait-ms = <30>;
-    tap-ms = <40>;
-    bindings = <&kp DOUBLE_QUOTES &kp DOUBLE_QUOTES>;
-};
-macro_doubleSingleQuotes: macro_doubleSingleQuotes {
-    compatible = "zmk,behavior-macro";
-    label = "MACRO_DOUBLESINGLEQUOTES";
-    #binding-cells = <0>;
-    wait-ms = <30>;
-    tap-ms = <40>;
-    bindings = <&kp SINGLE_QUOTE &kp SINGLE_QUOTE>;
-};
+/* Brackets */
+MACRO(parentheses, &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT)
+MACRO(brackets, &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT)
+MACRO(ltgt, &kp LESS_THAN &kp GREATER_THAN &kp LEFT)
 
-macro_dw: macro_dw {
-    compatible = "zmk,behavior-macro";
-    label = "MACRO_DW";
-    #binding-cells = <0>;
-    wait-ms = <30>;
-    tap-ms = <40>;
-    bindings = <&kp LG(BACKSPACE) &kp LC(W)>;
-};
-
-macro_power: macro_power {
-    compatible = "zmk,behavior-macro";
-    label = "MACRO_POWER";
-    #binding-cells = <0>;
-    wait-ms = <30>;
-    tap-ms = <40>;
-    bindings = <&macro_tap_time 1000 &kp C_POWER>;
-};
-
+/* Suspend macOS by holding power key for 1 second */
+MACRO(power, &macro_tap_time 1000 &kp C_POWER)
