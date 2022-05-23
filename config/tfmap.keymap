@@ -22,11 +22,11 @@
 / {
 
     combos {
-        #include "combos.dtsi"
+        //#include "combos.dtsi"
     };
 
     macros {
-        #include "macros.dtsi"
+        //#include "macros.dtsi"
     };
 
     behaviors {
