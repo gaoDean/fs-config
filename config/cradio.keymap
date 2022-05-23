@@ -53,9 +53,9 @@
       //  };
         dw_mod: delete_word_mod {
             compatible = "zmk,behavior-hold-tap";
-            label = "DELETE_WORD_TO_LAYER";
+            label = "DELETE_WORD_MOD";
             #binding-cells = <0>;
-            bindings = <&macro_dw>, <&kp LGUI>;
+            bindings = <&macro_dw &kp LGUI>;
         };
 
     };
