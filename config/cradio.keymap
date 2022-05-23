@@ -48,14 +48,14 @@
             compatible = "zmk,behavior-mod-morph";
             label = "IF_SHIFT";
             #binding-cells = <0>;
-            bindings = <&kp BKSP>, <&macro_dw>;
+            bindings = <&kp BKSP>, <&macro_dw 0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         dw_mod: delete_word_mod {
             compatible = "zmk,behavior-hold-tap";
             label = "DELETE_WORD_MOD";
             #binding-cells = <2>;
-            bindings = <&if_shft>, <&kp>;
+            bindings = <&kp>, <&macro_dw>;
         };
 
     };
@@ -72,7 +72,7 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
         &kp Q         &kp V         &kp W         &kp D         &kp Z             &kp B         &kp H         &kp COMMA    &kp SLASH      &kp X
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                                &kr_to NAV      &skq LSHIFT       &dw_mod 0 LGUI  &kp SPACE
+                                                &kr_to NAV      &skq LSHIFT       &dw_mod BKSP 0 &kp SPACE
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
                         >;
         };
