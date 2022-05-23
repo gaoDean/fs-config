@@ -1,24 +1,13 @@
-#define str(s) #s
-#define MACRO(NAME, BINDINGS) \
-    macro_##NAME: macro_##NAME { \
-        compatible = "zmk, behavior-macro"; \
-        label = str(macro_##NAME); \
-        #binding-cells = <0>; \
-        wait-ms = <30>; \
-        tap-ms = <40>; \
-        bindings = <BINDINGS>; \
-    };
-
 /* brackets */
-MACRO(bracket, &kp LEFT_BRACKET &kp RIGHT_BRACKET)
-MACRO(parenthesis, &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS)
-MACRO(arrow, &kp LESS_THAN &kp GREATER_THAN)
-MACRO(brace, &kp LEFT_BRACE &kp RIGHT_BRACE)
+ZMK_MACRO(macro_bracket; wait-ms = <30>; tap-ms = <40>; bindings = <&kp LEFT_BRACKET &kp RIGHT_BRACKET>;)
+ZMK_MACRO(macro_parenthesis; wait-ms = <30>; tap-ms = <40>; bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS>;)
+ZMK_MACRO(macro_arrow; wait-ms = <30>; tap-ms = <40>; bindings = <&kp LESS_THAN &kp GREATER_THAN>;)
+ZMK_MACRO(macro_brace; wait-ms = <30>; tap-ms = <40>; bindings = <&kp LEFT_BRACE &kp RIGHT_BRACE>;)
 
-MACRO(doubleGrave, &kp GRAVE &kp GRAVE)
-MACRO(quadQuotes, &kp DOUBLE_QUOTES &kp DOUBLE_QUOTES)
-MACRO(doubleSingleQuotes, &kp SINGLE_QUOTE &kp SINGLE_QUOTE)
+ZMK_MACRO(macro_doubleGrave; wait-ms = <30>; tap-ms = <40>; bindings = <&kp GRAVE &kp GRAVE>;)
+ZMK_MACRO(macro_quadQuotes; wait-ms = <30>; tap-ms = <40>; bindings = <&kp DOUBLE_QUOTES &kp DOUBLE_QUOTES>;)
+ZMK_MACRO(macro_doubleSingleQuotes; wait-ms = <30>; tap-ms = <40>; bindings = <&kp SINGLE_QUOTE &kp SINGLE_QUOTE>;)
 
-MACRO(dw, &kp LG(BACKSPACE) &kp LC(W))
+ZMK_MACRO(macro_dw; wait-ms = <30>; tap-ms = <40>; bindings = <&kp LG(BACKSPACE) &kp LC(W)>;)
 
-MACRO(power, &macro_tap_time 1000 &kp C_POWER)
+ZMK_MACRO(macro_power; wait-ms = <30>; tap-ms = <40>; bindings = <&macro_tap_time 1000 &kp C_POWER>;)
