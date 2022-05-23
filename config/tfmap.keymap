@@ -26,6 +26,8 @@
     };
 
     macros {
+ZMK_MACRO(macro_bracket; wait-ms = <30>; tap-ms = <40>; bindings = <&kp LEFT_BRACKET &kp RIGHT_BRACKET>;)
+ZMK_MACRO(macro_parenthesis; wait-ms = <30>; tap-ms = <40>; bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS>;)
         #include "macros.dtsi"
     };
 
