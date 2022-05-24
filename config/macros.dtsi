@@ -75,7 +75,7 @@ macro_dw: macro_dw {
     #binding-cells = <0>;
     wait-ms = <30>;
     tap-ms = <40>;
-    bindings = <&kp LG(BACKSPACE) &kp LC(W)>;
+    bindings = <&kp LA(W)>;
 };
 
 macro_power: macro_power {
