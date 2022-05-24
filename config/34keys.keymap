@@ -89,7 +89,7 @@
         #binding-cells = <0>;
         bindings = <&to BASE>, <&kp 0>;
         mods = <(MOD_LCTL)>;
-    }
+    };
   };
 
   keymap {
