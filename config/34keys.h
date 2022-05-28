@@ -3,7 +3,7 @@
 
 #define BASE 0
 #define NAV 1
-#define NUM 2
+#define FUNC 2
 #define QWER 3
 
 #define SK(KEY) &nk KEY KEY
