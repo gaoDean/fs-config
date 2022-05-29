@@ -105,6 +105,6 @@ COMBO(equalEqual,       &kp EQUAL       &kp EQUAL,  10  12)
 COMBO(minusEqual,       &kp MINUS       &kp EQUAL,  10  13)
 COMBO(asteriskEqual,    &kp ASTERISK    &kp EQUAL,  11  13)
 COMBO(plusEqual,        &kp PLUS        &kp EQUAL,  12  14)
-COMBO(modEqual,         &kp PERCENT,    &kp EQUAL,  3   12)
+COMBO(modEqual,         &kp PERCENT     &kp EQUAL,  3   12)
 
 
