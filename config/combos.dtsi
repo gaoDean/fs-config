@@ -65,7 +65,7 @@ COMBO(bothArrow, &macro_ltgt, 26 28)
 
 COMBO(control, &skq LEFT_CONTROL, 30 33)
 // COMBO(command, &skq LEFT_COMMAND, 31 33)
-COMBO(enter, &kp ENTER, 31, 33)
+COMBO(enter, &kp ENTER, 31 33)
 COMBO(alt, &skq LEFT_ALT, 30 32)
 COMBO(escape, &kp ESCAPE, 31 32)
 COMBO(capsword, &caps_word, 32 33)
