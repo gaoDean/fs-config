@@ -1,9 +1,17 @@
-    skq: sticky_key_quick_release {
+    sks: sticky_key_slow {
       compatible = "zmk,behavior-sticky-key";
-      label = "STICKY_KEY_QUICK_RELEASE";
+      label = "STICKY_KEY_SLOW";
       #binding-cells = <1>;
       bindings = <&kp>;
       // quick-release;
+      release-after-ms = <STICKY_KEY_TIMEOUT>;
+    };
+    skq: sticky_key_quick {
+      compatible = "zmk,behavior-sticky-key";
+      label = "STICKY_KEY_QUICK";
+      #binding-cells = <1>;
+      bindings = <&kp>;
+      quick-release;
       release-after-ms = <STICKY_KEY_TIMEOUT>;
     };
 

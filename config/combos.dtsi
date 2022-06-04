@@ -66,17 +66,17 @@ COMBO(bothArrow, &macro_ltgt, 26 28)
 
 control: control {
     timeout-ms = <50>;
-    bindings = <&skq LEFT_CONTROL>;
+    bindings = <&sks LEFT_CONTROL>;
     key-positions = <30 33>;
 };
 alt: alt {
     timeout-ms = <50>;
-    bindings = <&skq LALT>;
+    bindings = <&sks LALT>;
     key-positions = <32 33>;
 };
 command: command {
     timeout-ms = <50>;
-    bindings = <&skq LGUI>;
+    bindings = <&sks LGUI>;
     key-positions = <30 32>;
 };
 enter: enter {
