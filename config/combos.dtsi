@@ -107,5 +107,5 @@ COMBO(btclear, &bt BT_CLR, 4 24)
 COMBO(upLeft, &kp KP_N7, 7 16)
 COMBO(upRight, &kp KP_N9, 7 18)
 COMBO(downLeft, &kp KP_N1, 16 27)
-COMBO(downRight, &KP KP_N3, 18 27)
+COMBO(downRight, &kp KP_N3, 18 27)
 
