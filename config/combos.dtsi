@@ -69,15 +69,20 @@ control: control {
     bindings = <&skq LEFT_CONTROL>;
     key-positions = <30 33>;
 };
+alt: alt {
+    timeout-ms = <50>;
+    bindings = <&skq LALT>;
+    key-positions = <32 33>;
+};
+command: command {
+    timeout-ms = <50>;
+    bindings = <&skq LGUI>;
+    key-positions = <30 31>;
+};
 enter: enter {
     timeout-ms = <50>;
     bindings = <&kp ENTER>;
     key-positions = <31 33>;
-};
-alt: alt {
-    timeout-ms = <50>;
-    bindings = <&skq LALT>;
-    key-positions = <30 32>;
 };
 escape: escape {
     timeout-ms = <50>;
