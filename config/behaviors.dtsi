@@ -37,7 +37,7 @@
         bindings = <&mo>, <&key_repeat>;
     };
 
-    if_shift: if_shift_bksp_dw {
+    if_shift_dw: if_shift_bksp_dw {
         compatible = "zmk,behavior-mod-morph";
         label = "IF_SHIFT_BKSP_DW";
         #binding-cells = <0>;
@@ -50,7 +50,7 @@
         label = "DELETE_WORD_BACKSPACE";
         #binding-cells = <2>;
         tapping_term_ms = <200>;
-        bindings = <&kp>, <&if_shift>;
+        bindings = <&kp>, <&if_shift_dw>;
     };
 
     if_lctrl: if_lctrl {
