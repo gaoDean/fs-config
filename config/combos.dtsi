@@ -67,27 +67,27 @@ COMBO(bothArrow, &macro_ltgt, 26 28)
 control: control {
     timeout-ms = <50>;
     bindings = <&skq LEFT_CONTROL>;
-    binding-cells = <30 33>;
+    key-positions = <30 33>;
 };
 enter: enter {
     timeout-ms = <50>;
     bindings = <&kp ENTER>;
-    binding-cells = <31 33>;
+    key-positions = <31 33>;
 };
 alt: alt {
     timeout-ms = <50>;
     bindings = <&skq LALT>;
-    binding-cells = <30 32>;
+    key-positions = <30 32>;
 };
 escape: escape {
     timeout-ms = <50>;
     bindings = <&kp ESCAPE>;
-    binding-cells = <31 32>;
+    key-positions = <31 32>;
 };
 capsword: capsword {
     timeout-ms = <50>;
     bindings = <&caps_word>;
-    binding-cells = <30 31>;
+    key-positions = <30 31>;
 };
 //COMBO(enter, &kp ENTER, 31 33)
 // COMBO(command, &skq LEFT_COMMAND, 31 33)
