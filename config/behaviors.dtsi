@@ -41,7 +41,7 @@
         compatible = "zmk,behavior-mod-morph";
         label = "IF_SHIFT_BKSP_DW";
         #binding-cells = <0>;
-        bindings = <&kp BKSP>, <&macro_dw>;
+        bindings = <&kp LA(BKSP)>, <&kp BKSP>;
         mods = <(MOD_LSFT|MOD_RSFT)>;
     };
 

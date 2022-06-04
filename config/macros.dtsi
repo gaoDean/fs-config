@@ -18,7 +18,7 @@ MACRO(ltgt,         &kp LESS_THAN           &kp GREATER_THAN)
 MACRO(doubleGrave,  &kp GRAVE               &kp GRAVE)
 MACRO(quadQuotes,   &kp DOUBLE_QUOTES       &kp DOUBLE_QUOTES)
 MACRO(doubleSingleQuotes, &kp SINGLE_QUOTE  &kp SINGLE_QUOTE)
-MACRO(dw,           &kp LG(BACKSPACE)       &kp LC(W))
+// MACRO(dw,           &kp LG(BACKSPACE)       &kp LC(W))
 
 /* Suspend macOS by holding power key for 1 second */
 MACRO(power,        &macro_tap_time 1000    &kp C_POWER)
