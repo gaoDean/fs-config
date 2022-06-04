@@ -80,8 +80,8 @@ COMBO(bt1, &bt BT_SEL 1, 19 29)
 COMBO(bttog, &out OUT_TOG, 11 12 13)
 COMBO(btclear, &bt BT_CLR, 4 24)
 
-COMBO(upLeft, &kp KP_7, 7 16)
-COMBO(upRight, &kp KP_9, 7 18)
-COMBO(downLeft, &kp KP_1, 16 27)
-COMBO(downRight, &KP KP_3, 18 27)
+COMBO(upLeft, &kp KP_N7, 7 16)
+COMBO(upRight, &kp KP_N9, 7 18)
+COMBO(downLeft, &kp KP_N1, 16 27)
+COMBO(downRight, &KP KP_N3, 18 27)
 
