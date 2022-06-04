@@ -77,7 +77,7 @@ alt: alt {
 command: command {
     timeout-ms = <50>;
     bindings = <&skq LGUI>;
-    key-positions = <30 31>;
+    key-positions = <30 32>;
 };
 enter: enter {
     timeout-ms = <50>;
