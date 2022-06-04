@@ -22,6 +22,7 @@ MACRO(doubleSingleQuotes, &kp SINGLE_QUOTE  &kp SINGLE_QUOTE)
 
 MACRO(equalEqual,   &kp EQUAL               &kp EQUAL)
 MACRO(minusEqual,   &kp MINUS               &kp EQUAL)
+MACRO(plusEqual,    &kp plusEqual           &kp EQUAL)
 MACRO(asteriskEqual,&kp ASTERISK            &kp EQUAL)
 MACRO(percentEqual, &kp PERCENT             &kp EQUAL)
 MACRO(slashEqual,   &kp SLASH               &kp EQUAL)
