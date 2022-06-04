@@ -20,5 +20,11 @@ MACRO(quadQuotes,   &kp DOUBLE_QUOTES       &kp DOUBLE_QUOTES)
 MACRO(doubleSingleQuotes, &kp SINGLE_QUOTE  &kp SINGLE_QUOTE)
 // MACRO(dw,           &kp LG(BACKSPACE)       &kp LC(W))
 
+MACRO(equalEqual,   &kp EQUAL               &kp EQUAL)
+MACRO(minusEqual,   &kp MINUS               &kp EQUAL)
+MACRO(asteriskEqual,&kp ASTERISK            &kp EQUAL)
+MACRO(percentEqual, &kp PERCENT             &kp EQUAL)
+MACRO(slashEqual,   &kp SLASH               &kp EQUAL)
+
 /* Suspend macOS by holding power key for 1 second */
 MACRO(power,        &macro_tap_time 1000    &kp C_POWER)
