@@ -57,8 +57,8 @@
         compatible = "zmk,behavior-mod-morph";
         label = "IF_SHIFT_BKSP_DW";
         #binding-cells = <0>;
-        bindings = <&macro_dw>, <&kp BSPC>;
-        mods = <(LSHIFT|RSHIFT)>;
+        bindings = <&macro_dw>, <&kp BKSP>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
     };
 
     dw_bksp: delete_word_backspace {
@@ -74,5 +74,5 @@
         label = "IF_LCTRL";
         #binding-cells = <0>;
         bindings = <&to BASE>, <&kp 0>;
-        mods = <(LCTRL)>;
+        mods = <(MOD_LCTL)>;
     };
