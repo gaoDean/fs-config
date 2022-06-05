@@ -102,9 +102,4 @@ capsword: capsword {
 
 /* Keyboard */
 COMBO(power, &macro_power, 12 13 16 17)
-COMBO(reset, &reset, 11 12 13 17)
-COMBO(bootloader, &bootloader, 14 15 24 25)
-COMBO(bt0, &bt BT_SEL 0, 10 20)
-COMBO(bt1, &bt BT_SEL 1, 19 29)
-COMBO(bttog, &out OUT_TOG, 11 12 13)
-COMBO(btclear, &bt BT_CLR, 4 24)
+// COMBO(bttog, &out OUT_TOG, 11 12 13)
