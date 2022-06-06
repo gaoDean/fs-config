@@ -31,3 +31,6 @@ MACRO(dw,           &kp LA(BKSP)            &kp LC(W))
 
 /* Suspend macOS by holding power key for 1 second */
 MACRO(power,        &macro_tap_time 1000    &kp C_POWER)
+
+MACRO(lhs_bootloader,&macro_tap_time 1000   &bootloader)
+MACRO(rhs_bootloader,&macro_tap_time 1000   &bootloader)
