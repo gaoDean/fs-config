@@ -4,7 +4,6 @@
 #define BASE 0
 #define NAV 1
 #define FUNC 2
-#define QWER 4
 #define GAME 3
 
 #define SK(KEY) &nk KEY KEY
