@@ -30,4 +30,4 @@ MACRO(slashEqual,   &kp SLASH               &kp EQUAL)
 MACRO(dw,           &kp LA(BKSP)            &kp LC(W))
 
 /* Suspend macOS by holding power key for 1 second */
-MACRO(power,        &kp C_POWER)
+MACRO(power,        &macro_tap_time 1000    &kp C_POWER)
