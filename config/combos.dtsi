@@ -107,6 +107,4 @@ capsword: capsword {
 COMBO(power, &macro_power, 12 13 16 17)
 // COMBO(bttog, &out OUT_TOG, 11 12 13)
 COMBO(rhs_reset, &reset, 9 19 29)
-COMBO(rhs_boot, &macro_rhs_bootloader, 6 9 16 19 26 29)
 COMBO(lhs_reset, &reset, 0 10 20)
-COMBO(lhs_boot, &macro_lhs_bootloader, 1 4 11 14 21 24)
