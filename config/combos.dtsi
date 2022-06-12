@@ -70,7 +70,7 @@ COMBO(rightArrow,       &kp GREATER_THAN,           27  28)
 COMBO(bothArrow,        &macro_ltgt,                26  28)
 
 /* Keyboard */
-COMBO(power,            &macro_power,               10 11 18 19)
+COMBO(power,            &macro_power,               3   6)
 COMBO(copy,             &kp LG(C),                  13  16)
 COMBO(paste,            &kp LG(V),                  12  17)
 COMBO(ctrl_c,           &kp LC(C),                  11  18)
