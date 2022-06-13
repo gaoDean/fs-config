@@ -41,7 +41,7 @@
         compatible = "zmk,behavior-hold-tap";
         label = "KEY_REPEAT_TO_LAYER";
         #binding-cells = <2>;
-        tapping_term_ms = <200>;
+        tapping_term_ms = <120>;
         bindings = <&mo>, <&key_repeat>;
     };
 
