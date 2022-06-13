@@ -29,8 +29,8 @@ MACRO(slashEqual,   &kp SLASH               &kp EQUAL)
 
 MACRO(dw,           &kp LA(BKSP)            &kp LC(W))
 
-MACRO(go,           &kp LCTRL               &kp LSHFT)
-MACRO(throw,        &kp LCTRL               &kp LGUI)
+MACRO(go,           &sk LCTRL               &sk LSHFT)
+MACRO(throw,        &sk LCTRL               &sk LGUI)
 
 /* Suspend macOS by holding power key for 1 second */
 MACRO(power,        &macro_tap_time 1000    &kp C_POWER)
