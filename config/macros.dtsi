@@ -31,6 +31,7 @@ MACRO(dw,           &kp LA(BKSP)            &kp LC(W))
 
 MACRO(go,           &sk LCTRL               &sk LSHFT)
 MACRO(throw,        &sk LCTRL               &sk LGUI)
+MACRO(brace_enter,  &kp LEFT_BRACE          &kp ENTER)
 
 /* Suspend macOS by holding power key for 1 second */
 MACRO(power,        &macro_tap_time 1000    &kp C_POWER)
