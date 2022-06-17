@@ -85,7 +85,12 @@ COMBO(lhs_reset, &reset, 0 10 20)
 brace_enter: brace_enter {
     timeout-ms = <50>;
     bindings = <&macro_brace_enter>;
-    key-positions = <21 32>;
+    key-positions = <21 33>;
+};
+paren_brace_enter: paren_brace_enter {
+    timeout-ms = <50>;
+    bindings = <&macro_paren_brace_enter>;
+    key-positions = <22 33>;
 };
 control: control {
     timeout-ms = <50>;
