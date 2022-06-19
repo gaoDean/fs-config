@@ -2,37 +2,37 @@
 #define str(s) #s
 #define MACRO(NAME, BINDINGS) \
   macro_##NAME: macro_##NAME { \
-      compatible = "zmk,behavior-macro"; \
-      label = str(macro_##NAME); \
-      #binding-cells = <0>; \
-      wait-ms = <30>; \
-      tap-ms = <40>; \
-      bindings = <BINDINGS>; \
+	  compatible = "zmk,behavior-macro"; \
+	  label = str(macro_##NAME); \
+	  #binding-cells = <0>; \
+	  wait-ms = <30>; \
+	  tap-ms = <40>; \
+	  bindings = <BINDINGS>; \
   };
 
 /* Brackets */
-MACRO(parentheses,  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS)
-MACRO(brackets,     &kp LEFT_BRACKET        &kp RIGHT_BRACKET)
-MACRO(braces,       &kp LEFT_BRACE          &kp RIGHT_BRACE)
-MACRO(ltgt,         &kp LESS_THAN           &kp GREATER_THAN)
-MACRO(doubleGrave,  &kp GRAVE               &kp GRAVE)
-MACRO(quadQuotes,   &kp DOUBLE_QUOTES       &kp DOUBLE_QUOTES)
-MACRO(doubleSingleQuotes, &kp SINGLE_QUOTE  &kp SINGLE_QUOTE)
-// MACRO(dw,           &kp LG(BACKSPACE)       &kp LC(W))
+MACRO(parentheses,	&kp LEFT_PARENTHESIS	&kp RIGHT_PARENTHESIS)
+MACRO(brackets,		&kp LEFT_BRACKET		&kp RIGHT_BRACKET)
+MACRO(braces,		&kp LEFT_BRACE			&kp RIGHT_BRACE)
+MACRO(ltgt,			&kp LESS_THAN			&kp GREATER_THAN)
+MACRO(doubleGrave,	&kp GRAVE				&kp GRAVE)
+MACRO(quadQuotes,	&kp DOUBLE_QUOTES		&kp DOUBLE_QUOTES)
+MACRO(doubleSingleQuotes, &kp SINGLE_QUOTE	&kp SINGLE_QUOTE)
+// MACRO(dw,		   &kp LG(BACKSPACE)	   &kp LC(W))
 
-MACRO(equalEqual,   &kp EQUAL               &kp EQUAL)
-MACRO(minusEqual,   &kp MINUS               &kp EQUAL)
-MACRO(plusEqual,    &kp PLUS                &kp EQUAL)
-MACRO(asteriskEqual,&kp ASTERISK            &kp EQUAL)
-MACRO(percentEqual, &kp PERCENT             &kp EQUAL)
-MACRO(slashEqual,   &kp SLASH               &kp EQUAL)
+MACRO(equalEqual,	&kp EQUAL				&kp EQUAL)
+MACRO(minusEqual,	&kp MINUS				&kp EQUAL)
+MACRO(plusEqual,	&kp PLUS				&kp EQUAL)
+MACRO(asteriskEqual,&kp ASTERISK			&kp EQUAL)
+MACRO(percentEqual, &kp PERCENT				&kp EQUAL)
+MACRO(slashEqual,	&kp SLASH				&kp EQUAL)
 
-MACRO(dw,           &kp LA(BKSP)            &kp LC(W))
+MACRO(dw,			&kp LA(BKSP)			&kp LC(W))
 
-MACRO(go,           &sk LCTRL               &sk LSHFT)
-MACRO(throw,        &sk LCTRL               &sk LGUI)
-MACRO(brace_enter,  &kp LEFT_BRACE          &kp ENTER)
-MACRO(paren_brace_enter,  &kp LEFT_PARENTHESIS &kp LEFT_BRACE          &kp ENTER)
+MACRO(go,			&sk LCTRL				&sk LSHFT)
+MACRO(throw,		&sk LCTRL				&sk LGUI)
+MACRO(brace_enter,	&kp LEFT_BRACE			&kp ENTER)
+MACRO(paren_brace_enter,  &kp LEFT_PARENTHESIS &kp SPACE &kp LEFT_BRACE		   &kp ENTER)
 
 /* Suspend macOS by holding power key for 1 second */
-MACRO(power,        &macro_tap_time 1000    &kp C_POWER)
+MACRO(power,		&macro_tap_time 1000	&kp C_POWER)
