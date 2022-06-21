@@ -2,127 +2,127 @@ compatible = "zmk,combos";
 
 #define COMBO(NAME, BINDINGS, KEYPOS) \
   combo_##NAME { \
-    timeout-ms = <35>; \
-    bindings = <BINDINGS>; \
-    key-positions = <KEYPOS>; \
+	timeout-ms = <35>; \
+	bindings = <BINDINGS>; \
+	key-positions = <KEYPOS>; \
   };
 
-/*                KEY POSITIONS
+/*				  KEY POSITIONS
 
   ╭────────────────────╮ ╭────────────────────╮
-  │  0   1   2   3   4 │ │  5   6   7   8   9 │
-  │ 10  11  12  13  14 │ │ 15  16  17  18  19 │
-  │ 20  21  22  23  24 │ │ 25  26  27  28  29 │
-  ╰───────────╮ 30  31 │ │ 32  33 ╭───────────╯
-              ╰────────╯ ╰────────╯            */
+  │  0	 1	 2	 3	 4 │ │	5	6	7	8	9 │
+  │ 10	11	12	13	14 │ │ 15  16  17  18  19 │
+  │ 20	21	22	23	24 │ │ 25  26  27  28  29 │
+  ╰───────────╮ 30	31 │ │ 32  33 ╭───────────╯
+			  ╰────────╯ ╰────────╯			   */
 
 
-COMBO(caret,            &kp CARET,                  0   1)
-COMBO(leftBracket,      &kp LEFT_BRACKET,           1   2)
-COMBO(bothBracket,      &macro_brackets,            1   3)
-COMBO(rightBracket,     &kp RIGHT_BRACKET,          2   3)
-COMBO(pipe,             &kp PIPE,                   3   4)
-COMBO(page_up,          &kp PAGE_UP,                5   6)
-COMBO(leftParethesis,   &kp LEFT_PARENTHESIS,       6   7)
-COMBO(bothParenthesis,  &macro_parentheses,         6   8)
-COMBO(rightParenthesis, &kp RIGHT_PARENTHESIS,      7   8)
+COMBO(caret,			&kp CARET,					0	1)
+COMBO(leftBracket,		&kp LEFT_BRACKET,			1	2)
+COMBO(bothBracket,		&macro_brackets,			1	3)
+COMBO(rightBracket,		&kp RIGHT_BRACKET,			2	3)
+COMBO(pipe,				&kp PIPE,					3	4)
+COMBO(page_up,			&kp PAGE_UP,				5	6)
+COMBO(leftParethesis,	&kp LEFT_PARENTHESIS,		6	7)
+COMBO(bothParenthesis,	&macro_parentheses,			6	8)
+COMBO(rightParenthesis, &kp RIGHT_PARENTHESIS,		7	8)
 
-COMBO(hash,             &kp HASH,                   1   11)
-COMBO(slash,            &kp SLASH,                  2   12)
-COMBO(percentage,       &kp PERCENT,                3   13)
-COMBO(colon,            &kp COLON,                  4   14)
-COMBO(at,               &kp AT_SIGN,                5   15)
-COMBO(exclamationMark,  &kp EXCLAMATION,            6   16)
-COMBO(questionMark,     &kp QUESTION,               7   17)
-// COMBO(backslash,        &kp NON_US_BACKSLASH,       8   18)
+COMBO(hash,				&kp HASH,					1	11)
+COMBO(slash,			&kp SLASH,					2	12)
+COMBO(percentage,		&kp PERCENT,				3	13)
+COMBO(colon,			&kp COLON,					4	14)
+COMBO(at,				&kp AT_SIGN,				5	15)
+COMBO(exclamationMark,	&kp EXCLAMATION,			6	16)
+COMBO(questionMark,		&kp QUESTION,				7	17)
+// COMBO(backslash,		   &kp NON_US_BACKSLASH,	   8   18)
 
-COMBO(minus,            &kp MINUS,                  10  11)
-COMBO(asterisk,         &kp ASTERISK,               11  12)
-COMBO(equal,            &kp EQUAL,                  12  13)
-COMBO(plus,             &kp PLUS,                   13  14)
-COMBO(equalEqual,       &macro_equalEqual,          10  12)
-COMBO(minusEqual,       &macro_minusEqual,          10  13)
-COMBO(asteriskEqual,    &macro_asteriskEqual,       11  13)
-COMBO(plusEqual,        &macro_plusEqual,           12  14)
-COMBO(percentEqual,     &macro_percentEqual,        3   12)
-COMBO(slashEqual,       &macro_slashEqual,          2   13)
-COMBO(backslash,        &kp BACKSLASH,              15  16)
-COMBO(doubleQuotes,     &kp DOUBLE_QUOTES,          16  17)
-COMBO(singleQuote,      &kp SINGLE_QUOTE,           17  18)
-COMBO(dollar,           &kp DOLLAR,                 18  19)
-COMBO(tab,              &kp TAB,                    16  18)
-COMBO(shift_tab,        &kp LS(TAB),                17  19)
+COMBO(minus,			&kp MINUS,					10	11)
+COMBO(asterisk,			&kp ASTERISK,				11	12)
+// COMBO(equal,			&kp EQUAL,					12	13)
+COMBO(ampersand,		&kp AMPERSAND,				12	13)
+COMBO(plus,				&kp PLUS,					13	14)
+COMBO(equalEqual,		&macro_equalEqual,			10	12)
+COMBO(minusEqual,		&macro_minusEqual,			10	13)
+COMBO(asteriskEqual,	&macro_asteriskEqual,		11	13)
+COMBO(plusEqual,		&macro_plusEqual,			12	14)
+COMBO(percentEqual,		&macro_percentEqual,		3	12)
+COMBO(slashEqual,		&macro_slashEqual,			2	13)
+COMBO(backslash,		&kp BACKSLASH,				15	16)
+COMBO(doubleQuotes,		&kp DOUBLE_QUOTES,			16	17)
+COMBO(singleQuote,		&kp SINGLE_QUOTE,			17	18)
+COMBO(dollar,			&kp DOLLAR,					18	19)
+COMBO(tab,				&kp TAB,					16	18)
+COMBO(shift_tab,		&kp LS(TAB),				17	19)
 
-COMBO(doubleGrave,      &macro_doubleGrave,         11  21)
-COMBO(grave,            &kp GRAVE,                  12  22)
-COMBO(tilde,            &kp TILDE,                  13  23)
-COMBO(quadQuotes,       &macro_quadQuotes,          16  26)
-COMBO(doubleSingleQuotes, &macro_doubleSingleQuotes,17  27)
+COMBO(doubleGrave,		&macro_doubleGrave,			11	21)
+COMBO(grave,			&kp GRAVE,					12	22)
+COMBO(tilde,			&kp TILDE,					13	23)
+COMBO(quadQuotes,		&macro_quadQuotes,			16	26)
+COMBO(doubleSingleQuotes, &macro_doubleSingleQuotes,17	27)
 
-COMBO(ampersand,        &kp AMPERSAND,              20  21)
-COMBO(leftBrace,        &kp LEFT_BRACE,             21  22)
-COMBO(rightBrace,       &kp RIGHT_BRACE,            22  23)
-COMBO(bothBrace,        &macro_braces,              21  23)
-COMBO(spotlight,        &kp LG(SPACE),              23  24)
-COMBO(page_down,        &kp PAGE_DOWN,              25  26)
-COMBO(leftArrow,        &kp LESS_THAN,              26  27)
-COMBO(rightArrow,       &kp GREATER_THAN,           27  28)
-COMBO(bothArrow,        &macro_ltgt,                26  28)
+COMBO(leftBrace,		&kp LEFT_BRACE,				21	22)
+COMBO(rightBrace,		&kp RIGHT_BRACE,			22	23)
+COMBO(bothBrace,		&macro_braces,				21	23)
+COMBO(spotlight,		&kp LG(SPACE),				23	24)
+COMBO(page_down,		&kp PAGE_DOWN,				25	26)
+COMBO(leftArrow,		&kp LESS_THAN,				26	27)
+COMBO(rightArrow,		&kp GREATER_THAN,			27	28)
+COMBO(bothArrow,		&macro_ltgt,				26	28)
 
 /* Keyboard */
-COMBO(cut,              &kp LG(X),                  3   6)
-COMBO(undo,             &kp LG(Z),                  2   7)
-COMBO(power,            &macro_power,               1   8)
-COMBO(copy,             &kp LG(C),                  13  16)
-COMBO(paste,            &kp LG(V),                  12  17)
-COMBO(ctrl_c,           &kp LC(C),                  11  18)
-COMBO(quit,             &kp LG(Q),                  10  19)
-COMBO(back,             &kp LG(LEFT_BRACKET),       10  16)
-COMBO(forward,          &kp LG(RIGHT_BRACKET),      13  19)
+COMBO(cut,				&kp LG(X),					3	6)
+COMBO(undo,				&kp LG(Z),					2	7)
+COMBO(power,			&macro_power,				1	8)
+COMBO(copy,				&kp LG(C),					13	16)
+COMBO(paste,			&kp LG(V),					12	17)
+COMBO(ctrl_c,			&kp LC(C),					11	18)
+COMBO(quit,				&kp LG(Q),					10	19)
+COMBO(back,				&kp LG(LEFT_BRACKET),		10	16)
+COMBO(forward,			&kp LG(RIGHT_BRACKET),		13	19)
 
 // COMBO(bttog, &out OUT_TOG, 11 12 13)
 COMBO(rhs_reset, &reset, 9 19 29)
 COMBO(lhs_reset, &reset, 0 10 20)
 
 brace_enter: brace_enter {
-    timeout-ms = <50>;
-    bindings = <&macro_brace_enter>;
-    key-positions = <21 33>;
+	timeout-ms = <50>;
+	bindings = <&macro_brace_enter>;
+	key-positions = <21 33>;
 };
 paren_brace_enter: paren_brace_enter {
-    timeout-ms = <50>;
-    bindings = <&macro_paren_brace_enter>;
-    key-positions = <22 33>;
+	timeout-ms = <50>;
+	bindings = <&macro_paren_brace_enter>;
+	key-positions = <22 33>;
 };
 control: control {
-    timeout-ms = <50>;
-    bindings = <&sks LEFT_CONTROL>;
-    key-positions = <30 33>;
+	timeout-ms = <50>;
+	bindings = <&sks LEFT_CONTROL>;
+	key-positions = <30 33>;
 };
 alt: alt {
-    timeout-ms = <50>;
-    bindings = <&sks LALT>;
-    key-positions = <32 33>;
+	timeout-ms = <50>;
+	bindings = <&sks LALT>;
+	key-positions = <32 33>;
 };
 command: command {
-    timeout-ms = <50>;
-    bindings = <&sks LGUI>;
-    key-positions = <30 32>;
+	timeout-ms = <50>;
+	bindings = <&sks LGUI>;
+	key-positions = <30 32>;
 };
 enter: enter {
-    timeout-ms = <60>;
-    bindings = <&kp ENTER>;
-    key-positions = <31 33>;
+	timeout-ms = <60>;
+	bindings = <&kp ENTER>;
+	key-positions = <31 33>;
 };
 escape: escape {
-    timeout-ms = <60>;
-    bindings = <&kp ESCAPE>;
-    key-positions = <31 32>;
+	timeout-ms = <60>;
+	bindings = <&kp ESCAPE>;
+	key-positions = <31 32>;
 };
 capsword: capsword {
-    timeout-ms = <50>;
-    bindings = <&caps_word>;
-    key-positions = <30 31>;
+	timeout-ms = <50>;
+	bindings = <&caps_word>;
+	key-positions = <30 31>;
 };
 //COMBO(enter, &kp ENTER, 31 33)
 // COMBO(command, &skq LEFT_COMMAND, 31 33)
