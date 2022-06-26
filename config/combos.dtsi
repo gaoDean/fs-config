@@ -95,7 +95,7 @@ paren_brace_enter: paren_brace_enter {
 	key-positions = <22 33>;
 };
 control: control {
-	timeout-ms = <50>;
+	timeout-ms = <30>;
 	bindings = <&sks LEFT_CONTROL>;
 	key-positions = <30 33>;
 };
