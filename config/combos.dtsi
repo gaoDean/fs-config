@@ -105,7 +105,7 @@ alt: alt {
 	key-positions = <32 33>;
 };
 command: command {
-	timeout-ms = <50>;
+	timeout-ms = <30>;
 	bindings = <&sks LGUI>;
 	key-positions = <30 32>;
 };
@@ -120,7 +120,7 @@ escape: escape {
 	key-positions = <31 32>;
 };
 capsword: capsword {
-	timeout-ms = <50>;
+	timeout-ms = <30>;
 	bindings = <&caps_word>;
 	key-positions = <30 31>;
 };
