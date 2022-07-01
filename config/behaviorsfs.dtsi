@@ -65,7 +65,7 @@
 		compatible = "zmk,behavior-mod-morph";
 		label = "MOD_DOT_SLASH";
 		#binding-cells = <0>;
-		bindings = <&kp SLASH>, <&kp DOT>;
+		bindings = <&kp DOT>, <&kp SLASH>;
         mods = <(MOD_LSFT|MOD_RSFT)>;
 	};
 
@@ -73,7 +73,7 @@
 		compatible = "zmk,behavior-mod-morph";
 		label = "MOD_COMMA_MODULO";
 		#binding-cells = <0>;
-		bindings = <&kp PERCENT>, <&kp COMMA>;
+		bindings = <&kp COMMA>, <&kp PERCENT>;
         mods = <(MOD_LSFT|MOD_RSFT)>;
 	};
 
