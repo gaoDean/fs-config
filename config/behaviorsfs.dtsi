@@ -75,7 +75,7 @@
 		#binding-cells = <0>;
 		bindings = <&kp SLASH>, <&kp DOT>;
         mods = <(MOD_LSFT|MOD_RSFT)>;
-	}
+	};
 
 	mod_comma_modulo: mod_comma_modulo {
 		compatible = "zmk, behavior-mod-morph";
@@ -83,7 +83,7 @@
 		#binding-cells = <0>;
 		bindings = <&kp PERCENT>, <&kp COMMA>;
         mods = <(MOD_LSFT|MOD_RSFT)>;
-	}
+	};
 
     // if_lctrl: if_lctrl {
     //     compatible = "zmk,behavior-mod-morph";
