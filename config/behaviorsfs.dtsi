@@ -66,8 +66,24 @@
         label = "DELETE_ELSE_HOLD";
         #binding-cells = <2>;
         tapping_term_ms = <300>;
-        bindings = <&kp>, <&if_shift_dw>;
+        bindings = <&mo>, <&if_shift_dw>;
     };
+
+	mod_dot_slash: mod_dot_slash {
+		compatible = "zmk, behavior-mod-morph";
+		label = "MOD_DOT_SLASH";
+		#binding-cells = <0>;
+		bindings = <&kp SLASH>, <&kp DOT>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+	}
+
+	mod_comma_modulo: mod_comma_modulo {
+		compatible = "zmk, behavior-mod-morph";
+		label = "MOD_COMMA_MODULO";
+		#binding-cells = <0>;
+		bindings = <&kp PERCENT>, <&kp COMMA>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+	}
 
     // if_lctrl: if_lctrl {
     //     compatible = "zmk,behavior-mod-morph";

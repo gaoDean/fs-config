@@ -89,11 +89,6 @@ brace_enter: brace_enter {
 	bindings = <&macro_brace_enter>;
 	key-positions = <21 33>;
 };
-paren_brace_enter: paren_brace_enter {
-	timeout-ms = <50>;
-	bindings = <&macro_paren_brace_enter>;
-	key-positions = <22 33>;
-};
 control: control {
 	timeout-ms = <30>;
 	bindings = <&sks LEFT_CONTROL>;
@@ -110,12 +105,12 @@ command: command {
 	key-positions = <30 32>;
 };
 enter: enter {
-	timeout-ms = <60>;
+	timeout-ms = <40>;
 	bindings = <&kp ENTER>;
 	key-positions = <31 33>;
 };
 escape: escape {
-	timeout-ms = <60>;
+	timeout-ms = <40>;
 	bindings = <&kp ESCAPE>;
 	key-positions = <31 32>;
 };
@@ -124,10 +119,5 @@ capsword: capsword {
 	bindings = <&caps_word>;
 	key-positions = <30 31>;
 };
-//COMBO(enter, &kp ENTER, 31 33)
-// COMBO(command, &skq LEFT_COMMAND, 31 33)
-//COMBO(alt, &skq LEFT_ALT, 30 32)
-//COMBO(escape, &kp ESCAPE, 31 32)
-//COMBO(capsword, &caps_word, 32 33)
 
 
