@@ -61,14 +61,6 @@
         mods = <(MOD_LSFT|MOD_RSFT)>;
     };
 
-    delete_else_hold: delete_else_hold {
-        compatible = "zmk,behavior-hold-tap";
-        label = "DELETE_ELSE_HOLD";
-        #binding-cells = <2>;
-        tapping_term_ms = <300>;
-        bindings = <&mo>, <&if_shift_dw>;
-    };
-
 	mod_dot_slash: mod_dot_slash {
 		compatible = "zmk,behavior-mod-morph";
 		label = "MOD_DOT_SLASH";
@@ -84,6 +76,15 @@
 		bindings = <&kp PERCENT>, <&kp COMMA>;
         mods = <(MOD_LSFT|MOD_RSFT)>;
 	};
+
+    delete_else_hold: delete_else_hold {
+        compatible = "zmk,behavior-hold-tap";
+        label = "DELETE_ELSE_HOLD";
+        #binding-cells = <2>;
+        tapping_term_ms = <300>;
+        bindings = <&mo>, <&if_shift_dw>;
+    };
+
 
     // if_lctrl: if_lctrl {
     //     compatible = "zmk,behavior-mod-morph";
