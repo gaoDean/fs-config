@@ -70,7 +70,7 @@
     };
 
 	mod_dot_slash: mod_dot_slash {
-		compatible = "zmk, behavior-mod-morph";
+		compatible = "zmk,behavior-mod-morph";
 		label = "MOD_DOT_SLASH";
 		#binding-cells = <0>;
 		bindings = <&kp SLASH>, <&kp DOT>;
@@ -78,7 +78,7 @@
 	};
 
 	mod_comma_modulo: mod_comma_modulo {
-		compatible = "zmk, behavior-mod-morph";
+		compatible = "zmk,behavior-mod-morph";
 		label = "MOD_COMMA_MODULO";
 		#binding-cells = <0>;
 		bindings = <&kp PERCENT>, <&kp COMMA>;
