@@ -26,11 +26,9 @@ COMBO(leftParethesis,	&kp LEFT_PARENTHESIS,		6	7)
 COMBO(bothParenthesis,	&macro_parentheses,			6	8)
 COMBO(rightParenthesis, &kp RIGHT_PARENTHESIS,		7	8)
 
-COMBO(hash,				&kp HASH,					1	11)
-COMBO(slash,			&kp SLASH,					2	12)
-COMBO(percentage,		&kp PERCENT,				3	13)
+COMBO(at,				&kp AT_SIGN,				2	12)
+COMBO(hash,				&kp HASH,					3	13)
 COMBO(colon,			&kp COLON,					4	14)
-COMBO(at,				&kp AT_SIGN,				5	15)
 COMBO(exclamationMark,	&kp EXCLAMATION,			6	16)
 COMBO(questionMark,		&kp QUESTION,				7	17)
 // COMBO(backslash,		   &kp NON_US_BACKSLASH,	   8   18)
@@ -119,5 +117,3 @@ capsword: capsword {
 	bindings = <&caps_word>;
 	key-positions = <30 31>;
 };
-
-
