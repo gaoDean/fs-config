@@ -45,14 +45,6 @@ kr_to: key_repeat_to_layer {
 	bindings = <&mo>, <&key_repeat>;
 };
 
-// mo_to: mo_to {
-//     compatible = "zmk,behavior-hold-tap";
-//     label = "MO_TO";
-//     #binding-cells = <2>;
-//     tapping_term_ms = <200>;
-//     bindings = <&mo>, <&to>;
-// };
-
 if_shift_dw: if_shift_bksp_dw {
 	compatible = "zmk,behavior-mod-morph";
 	label = "IF_SHIFT_BKSP_DW";
@@ -65,8 +57,9 @@ mod_dot_slash: mod_dot_slash {
 	compatible = "zmk,behavior-mod-morph";
 	label = "MOD_DOT_SLASH";
 	#binding-cells = <0>;
-	bindings = <&kp DOT>, <&macro_cancel_slash>;
-	mods = <(MOD_LSFT|MOD_RSFT)>;
+	bindings = <&kp DOT>, <&kp SLASH>;
+	mods = <(MOD_LSFT)>;
+	masked_mods = <(MOD_LSFT)>;
 };
 
 mod_comma_modulo: mod_comma_modulo {
@@ -81,8 +74,8 @@ delete_else_hold: delete_else_hold {
 	compatible = "zmk,behavior-hold-tap";
 	label = "DELETE_ELSE_HOLD";
 	#binding-cells = <2>;
-	tapping_term_ms = <300>;
-	bindings = <&mo>, <&if_shift_dw>;
+	tapping_term_ms = <400>;
+	bindings = <&kp>, <&if_shift_dw>;
 };
 
 space_ctrl: space_ctrl {
@@ -99,4 +92,12 @@ space_ctrl: space_ctrl {
 //     #binding-cells = <0>;
 //     bindings = <&to BASE>, <&kp 0>;
 //     mods = <(MOD_LCTL)>;
+// };
+
+// mo_to: mo_to {
+//     compatible = "zmk,behavior-hold-tap";
+//     label = "MO_TO";
+//     #binding-cells = <2>;
+//     tapping_term_ms = <200>;
+//     bindings = <&mo>, <&to>;
 // };

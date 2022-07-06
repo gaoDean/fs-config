@@ -35,9 +35,11 @@ MACRO(brace_enter,	&kp LEFT_BRACE			&kp ENTER)
 
 
 ZMK_MACRO(macro_cancel_slash,
-	wait-ms = <10>;
-	tap-ms = <15>;
-	bindings = <&macro_release &kp LSHFT>, <&kp SLASH>;
+	wait-ms = <0>;
+	tap-ms = <0>;
+	bindings = <&macro_release &kp LSHFT>
+	, <&macro_tap &kp SLASH>
+	, <&macro_press &kp LSHFT>;
 )
 
 /* Suspend macOS by holding power key for 1 second */
