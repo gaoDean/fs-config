@@ -66,6 +66,8 @@ COMBO(page_down,		&kp PAGE_DOWN,				25	26)
 COMBO(leftArrow,		&kp LESS_THAN,				26	27)
 COMBO(rightArrow,		&kp GREATER_THAN,			27	28)
 COMBO(bothArrow,		&macro_ltgt,				26	28)
+COMBO(htmlTag, 			&macro_arrowslash, 			27  29)
+COMBO(dashArrow, 		&macro_dasharrow,			28 	29)
 
 /* Keyboard */
 COMBO(cut,				&kp LG(X),					3	6)
