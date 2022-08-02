@@ -2,12 +2,12 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: vrinek
-      url-base: https://github.com/vrinek
+    - name: urob
+      url-base: https://github.com/urob
   projects:
     - name: zmk
-      remote: vrinek
-      revision: masked-mod-morphs-untested
+      remote: urob
+      revision: fix-mod-morph
       import: app/west.yml
   self:
     path: config
