@@ -25,7 +25,6 @@ skq: sticky_key_quick {
 //   flavor = "tap-preferred";
 //   bindings = <&kp>, <&sk>;
 // };
-ooo
 
 // A hold-tap that activates without delay (like `&mo`)
 mo_tap: mo_with_tap {
@@ -62,7 +61,7 @@ mod_dot_slash: mod_dot_slash {
 	#binding-cells = <0>;
 	bindings = <&kp DOT>, <&kp SLASH>;
 	mods = <(MOD_LSFT)>;
-	masked_mods = <(MOD_LSFT)>;
+	masked-mods = <(MOD_LSFT)>;
 };
 
 mod_comma_modulo: mod_comma_modulo {
