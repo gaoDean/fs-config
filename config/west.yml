@@ -2,12 +2,12 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: urob
-      url-base: https://github.com/urob
+    - name: gaoDean
+      url-base: https://github.com/gaoDean
   projects:
     - name: zmk
-      remote: urob
-      revision: fix-mod-morph
+      remote: gaoDean
+      revision: main
       import: app/west.yml
   self:
     path: config
