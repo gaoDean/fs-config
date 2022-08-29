@@ -49,7 +49,7 @@ COMBO(doubleQuotes,		&kp DOUBLE_QUOTES,			16	17)
 COMBO(singleQuote,		&kp SINGLE_QUOTE,			17	18)
 COMBO(dollar,			&kp DOLLAR,					18	19)
 COMBO(tab,				&kp TAB,					16	18)
-COMBO(shift_tab,		&kp LS(TAB),				17	19)
+/* COMBO(shift_tab,		&kp LS(TAB),				17	19) */
 
 COMBO(doubleGrave,		&macro_doubleGrave,			11	21)
 COMBO(grave,			&kp GRAVE,					12	22)
