@@ -38,12 +38,12 @@ COMBO(ampersand,		&kp AMPERSAND,				10	11)
 COMBO(asterisk,			&kp ASTERISK,				11	12)
 COMBO(equal,			&kp EQUAL,					12	13)
 COMBO(plus,				&kp PLUS,					13	14)
-COMBO(equalEqual,		&macro_equalEqual,			10	12)
-COMBO(minusEqual,		&macro_minusEqual,			10	13)
+/* COMBO(equalEqual,		&macro_equalEqual,			10	12) */
+/* COMBO(minusEqual,		&macro_minusEqual,			10	13) */
 // COMBO(asteriskEqual,	&macro_asteriskEqual,		11	13)
 COMBO(plusEqual,		&macro_plusEqual,			12	14)
-COMBO(percentEqual,		&macro_percentEqual,		3	12)
-COMBO(slashEqual,		&macro_slashEqual,			2	13)
+/* COMBO(percentEqual,		&macro_percentEqual,		3	12) */
+/* COMBO(slashEqual,		&macro_slashEqual,			2	13) */
 COMBO(backslash,		&kp BACKSLASH,				15	16)
 COMBO(doubleQuotes,		&kp DOUBLE_QUOTES,			16	17)
 COMBO(singleQuote,		&kp SINGLE_QUOTE,			17	18)
@@ -51,7 +51,7 @@ COMBO(dollar,			&kp DOLLAR,					18	19)
 COMBO(tab,				&kp TAB,					16	18)
 /* COMBO(shift_tab,		&kp LS(TAB),				17	19) */
 
-COMBO(doubleGrave,		&macro_doubleGrave,			11	21)
+COMBO(tripleGrave,		&macro_tripleGrave,			11	21)
 COMBO(grave,			&kp GRAVE,					12	22)
 COMBO(tilde,			&kp TILDE,					13	23)
 COMBO(quadQuotes,		&macro_quadQuotes,			16	26)
