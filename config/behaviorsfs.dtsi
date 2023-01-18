@@ -61,7 +61,6 @@ mod_dot_slash: mod_dot_slash {
 	#binding-cells = <0>;
 	bindings = <&kp DOT>, <&kp SLASH>;
 	mods = <(MOD_LSFT)>;
-	keep-mods = <(MOD_LSFT)>;
 };
 
 mod_comma_modulo: mod_comma_modulo {
