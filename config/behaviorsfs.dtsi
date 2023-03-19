@@ -51,7 +51,7 @@ if_shift_dw: if_shift_bksp_dw {
 	compatible = "zmk,behavior-mod-morph";
 	label = "IF_SHIFT_BKSP_DW";
 	#binding-cells = <0>;
-	bindings = <&macro_dw>, <&kp BKSP>;
+	bindings = <&kp LA(BKSP)>, <&kp BKSP>;
 	mods = <(MOD_LSFT|MOD_RSFT)>;
 };
 
