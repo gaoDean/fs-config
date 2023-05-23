@@ -81,8 +81,8 @@ COMBO(back,				&kp LG(LEFT_BRACKET),		20	26)
 COMBO(forward,			&kp LG(RIGHT_BRACKET),		23	29)
 
 // COMBO(bttog, &out OUT_TOG, 11 12 13)
-COMBO(rhs_reset, &reset, 9 19 29)
-COMBO(lhs_reset, &reset, 0 10 20)
+COMBO(rhs_reset, &sys_reset, 9 19 29)
+COMBO(lhs_reset, &sys_reset, 0 10 20)
 
 brace_enter: brace_enter {
 	timeout-ms = <50>;
